@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动</title>
+    <style>
+        body {
+            width: 500px;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+        }
+        .clearFix {
+            clear: both;
+        }
+        .desc {
+            color: #FF6835;
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .fix:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .fix-final:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .fix-final {
+            *zoom: 1;
+        }
+        .break p {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+        .break p:first-child {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="break fix-final">
+        <p style="background-color: #FF6835"></p>
+        <p style="background-color: #333333"></p>
+        <p style="background-color: #40b9ff"></p>
+    </div>
+    <p class="desc">浮动造成的文字环绕效果</p>
+    <div>
+        <img src="../../images/demo.jpg" alt="实例图片" style="float: left;">
+        <span>
+            宇宙是质量在 时空中的总体分布及其所有变化。一般能理解的宇宙指人类所观察到的和尚未观察到的一个时空质无穷系统，包括其间的所有物件和事件。对于这一体系的整体解释构成了宇宙论。在中国古代就有“上下四方曰宇，往古来今曰宙”的说法（即宇的意思是无限空间，宙的意思是无限时间），宇宙一词也出自于“旁日月，挟宇宙”。近数世纪以来，科学家根据现代物理学和天文学，建立关于宇宙的现代科学理论，称为物理宇宙学。
+            宇宙是质量在 时空中的总体分布及其所有变化。一般能理解的宇宙指人类所观察到的和尚未观察到的一个时空质无穷系统，包括其间的所有物件和事件。对于这一体系的整体解释构成了宇宙论。在中国古代就有“上下四方曰宇，往古来今曰宙”的说法（即宇的意思是无限空间，宙的意思是无限时间），宇宙一词也出自于“旁日月，挟宇宙”。近数世纪以来，科学家根据现代物理学和天文学，建立关于宇宙的现代科学理论，称为物理宇宙学。
+        </span>
+    </div>
+    <p class="desc">浮动造成父元素高度的塌陷</p>
+    <div>
+        <img src="../../images/demo.jpg" alt="实例图片">
+    </div>
+    <div>
+        <img src="../../images/demo.jpg" alt="实例图片" style="float: left;">
+    </div>
+    <p>宇宙是质量在 时空中的总体分布及其所有变化。一般能理解的宇宙指人类所观察到的和尚未观察到的一个时空质无穷系统，包括其间的所有物件和事件。对于这一体系的整体解释构成了宇宙论。在中国古代就有“上下四方曰宇，往古来今曰宙”的说法（即宇的意思是无限空间，宙的意思是无限时间），宇宙一词也出自于“旁日月，挟宇宙”。近数世纪以来，科学家根据现代物理学和天文学，建立关于宇宙的现代科学理论，称为物理宇宙学。</p>
+    <p class="desc">底部元素clear清除浮动</p>
+    <div>
+        <img src="../../images/demo.jpg" alt="实例图片" style="float: left;">
+        <div class="clearFix"></div>
+    </div>
+    <p>宇宙是质量在 时空中的总体分布及其所有变化。一般能理解的宇宙指人类所观察到的和尚未观察到的一个时空质无穷系统，包括其间的所有物件和事件。对于这一体系的整体解释构成了宇宙论。在中国古代就有“上下四方曰宇，往古来今曰宙”的说法（即宇的意思是无限空间，宙的意思是无限时间），宇宙一词也出自于“旁日月，挟宇宙”。近数世纪以来，科学家根据现代物理学和天文学，建立关于宇宙的现代科学理论，称为物理宇宙学。</p>
+    <p class="desc">css伪元素清除浮动,IE6/IE7不支持</p>
+    <div class="fix">
+        <img src="../../images/demo.jpg" alt="实例图片" style="float: left;">
+    </div>
+    <p>宇宙是质量在 时空中的总体分布及其所有变化。一般能理解的宇宙指人类所观察到的和尚未观察到的一个时空质无穷系统，包括其间的所有物件和事件。对于这一体系的整体解释构成了宇宙论。在中国古代就有“上下四方曰宇，往古来今曰宙”的说法（即宇的意思是无限空间，宙的意思是无限时间），宇宙一词也出自于“旁日月，挟宇宙”。近数世纪以来，科学家根据现代物理学和天文学，建立关于宇宙的现代科学理论，称为物理宇宙学。</p>
+    <p class="desc">最终兼容性的解决方案</p>
+    <div class="fix-final">
+        <img src="../../images/demo.jpg" alt="实例图片" style="float: left;">
+    </div>
+    <p>宇宙是质量在 时空中的总体分布及其所有变化。一般能理解的宇宙指人类所观察到的和尚未观察到的一个时空质无穷系统，包括其间的所有物件和事件。对于这一体系的整体解释构成了宇宙论。在中国古代就有“上下四方曰宇，往古来今曰宙”的说法（即宇的意思是无限空间，宙的意思是无限时间），宇宙一词也出自于“旁日月，挟宇宙”。近数世纪以来，科学家根据现代物理学和天文学，建立关于宇宙的现代科学理论，称为物理宇宙学。</p>
+</body>
+</html>
