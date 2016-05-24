@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transition</title>
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+        .t1 {
+            width: 200px;
+            height: 200px;
+            background-color: #3caae6;
+            -webkit-transition: width 1s linear;
+            -moz-transition: width 1s linear;
+            -o-transition: width 1s linear;
+            transition: width 1s linear;
+        }
+        .t1:hover {
+            width: 400px;
+        }
+        .container div {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            color: #FFF;
+            background-color: #FF6835;
+            font-size: 15px;
+            text-align: center;
+            margin: 10px 0;
+        }
+        .container div.linear {
+            -webkit-transition: all 3s linear;
+            -moz-transition: all 3s linear;
+            -o-transition: all 3s linear;
+            transition: all 3s linear;
+        }
+        .container div.ease {
+            -webkit-transition: all 3s ease;
+            -moz-transition: all 3s ease;
+            -o-transition: all 3s ease;
+            transition: all 3s ease;
+        }
+        .container div.ease-in {
+            -webkit-transition: all 3s ease-in;
+            -moz-transition: all 3s ease-in;
+            -o-transition: all 3s ease-in;
+            transition: all 3s ease-in;
+        }
+        .container div.ease-out {
+            -webkit-transition: all 3s ease-out;
+            -moz-transition: all 3s ease-out;
+            -o-transition: all 3s ease-out;
+            transition: all 3s ease-out;
+        }
+        .container div.ease-in-out {
+            -webkit-transition: all 3s ease-in-out;
+            -moz-transition: all 3s ease-in-out;
+            -o-transition: all 3s ease-in-out;
+            transition: all 3s ease-in-out;
+        }
+        .container div.bezier {
+            -webkit-transition: all 3s cubic-bezier(.36,-0.55,.68,1.55);
+            -moz-transition: all 3s cubic-bezier(.36,-0.55,.68,1.55);
+            -o-transition: all 3s cubic-bezier(.36,-0.55,.68,1.55);
+            transition: all 3s cubic-bezier(.36,-0.55,.68,1.55);
+        }
+
+        .container:hover div {
+            margin-left: 70%;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            border-radius: 30px;
+            background-color: #ffdd36;
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+        .ease {
+
+        }
+    </style>
+</head>
+<body>
+    <div class="t1"></div>
+    <div class="container">
+        <div class="linear">linear</div>
+        <div class="ease">ease</div>
+        <div class="ease-in">ease-in</div>
+        <div class="ease-out">ease-out</div>
+        <div class="ease-in-out">ease-in-out</div>
+        <div class="bezier">bezier</div>
+
+    </div>
+</body>
+</html>
