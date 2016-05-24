@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animation</title>
+    <style>
+        .demo1 {
+            -webkit-animation: demo1 3s linear infinite alternate;
+            -moz-animation: demo1 3s linear infinite alternate;
+            -o-animation: demo1 3s linear infinite alternate;
+            animation: demo1 3s linear infinite alternate;
+        }
+        @keyframes demo1 {
+            0% {
+                width: 100px;
+                height: 100px;
+                background-color: #FF6835;
+            }
+            50% {
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+            100% {
+                -webkit-border-radius: 75px;
+                -moz-border-radius: 75px;
+                border-radius: 75px;
+                width: 150px;
+                height: 150px;
+                background-color: #ffbc36;
+                margin-left: 80%;
+            }
+        }
+        @-webkit-keyframes demo1 {
+            0% {
+                width: 100px;
+                height: 100px;
+                background-color: #FF6835;
+            }
+            50% {
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+            100% {
+                -webkit-border-radius: 75px;
+                -moz-border-radius: 75px;
+                border-radius: 75px;
+                width: 150px;
+                height: 150px;
+                background-color: #ffbc36;
+                margin-left: 80%;
+            }
+        }
+        @-moz-keyframes demo1 {
+            0% {
+                width: 100px;
+                height: 100px;
+                background-color: #FF6835;
+            }
+            50% {
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+            100% {
+                -webkit-border-radius: 75px;
+                -moz-border-radius: 75px;
+                border-radius: 75px;
+                width: 150px;
+                height: 150px;
+                background-color: #ffbc36;
+                margin-left: 80%;
+            }
+        }
+        @-ms-keyframes demo1 {
+            0% {
+                width: 100px;
+                height: 100px;
+                background-color: #FF6835;
+            }
+            50% {
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+            100% {
+                -webkit-border-radius: 75px;
+                -moz-border-radius: 75px;
+                border-radius: 75px;
+                width: 150px;
+                height: 150px;
+                background-color: #ffbc36;
+                margin-left: 80%;
+            }
+        }
+        @-o-keyframes demo1 {
+            0% {
+                width: 100px;
+                height: 100px;
+                background-color: #FF6835;
+            }
+            50% {
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+            100% {
+                -webkit-border-radius: 75px;
+                -moz-border-radius: 75px;
+                border-radius: 75px;
+                width: 150px;
+                height: 150px;
+                background-color: #ffbc36;
+                margin-left: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="demo1"></div>
+</body>
+</html>
